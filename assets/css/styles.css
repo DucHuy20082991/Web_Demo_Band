@@ -61,6 +61,7 @@ Kieu dang
 
 html{
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 #main{
