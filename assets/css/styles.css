@@ -12,6 +12,47 @@
     color: #fff !important;
 }
 
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{ /*column*/
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width: 33.333%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.mt-8px{
+    margin-top: 8px !important;
+}
+
+.mt-16px{
+    margin-top: 16px !important;
+}
 /*Vi tri
 Kich thuoc 
 Mau sac
@@ -188,12 +229,6 @@ html{
     overflow: hidden;
 }
 
-#content .member-item{
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
-}
-
 #content .member-name{
     font-size: 15px;
 }
@@ -245,13 +280,8 @@ html{
 }
 /*Places*/
 .places-list{
-    margin: 32px -8px 48px; /*top 32px trai phai -8px duoi 48px, -8px ky thuat*/
-}
-
-.places-item{
-    float: left;
-    width: calc(100% / 3);
-    padding: 0 8px;  
+    margin-top: 32px; /*top 32px trai phai -8px duoi 48px, -8px ky thuat*/
+    margin-bottom: 48px ;
 }
 
 .places-img{
@@ -299,6 +329,45 @@ html{
     background-color: #ccc;
 }
 
+/*Contact */
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+   width: 30px;
+   display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+
+.contact-form .from-submit-btn{
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+}
+
+.contact-form .from-submit-btn:hover{
+    background: #ccc;
+    color: #000;
+}
+
 /*-->Footer section*/
 #footer{
 
@@ -327,6 +396,7 @@ html{
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
+    animation: modaFadeIn ease 0.5s;
 }
 
 .modal-header{
@@ -400,4 +470,16 @@ html{
 .modal-footer a{
     color: #2196F3;
     
+}
+
+@keyframes modaFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px) ;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) ;
+    }
 }
