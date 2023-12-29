@@ -364,13 +364,41 @@ html{
 }
 
 .contact-form .from-submit-btn:hover{
+    cursor: pointer;
     background: #ccc;
     color: #000;
 }
 
+.map-section img{
+    width: 100%;
+}
+
 /*-->Footer section*/
 #footer{
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer .social-link{
+    font-size: 24px;  
+}
+
+#footer .social-link a{
+    color: gray;
+    text-decoration: none;
+}
+
+#footer .social-link a:hover{
+    opacity: 0.5;
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: gray;
+}
+
+#footer .copyright a{
+    color: gray;
 }
 
 /*-->Modal section*/
